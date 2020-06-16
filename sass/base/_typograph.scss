@@ -1,0 +1,61 @@
+body{
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: 800;
+    line-height: 1.7;
+    color: $color-grey-dark !important;
+
+    
+}
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: .6rem;
+
+    &--main {
+        display: block;
+        font-size: 4rem;
+        font-weight: 500;
+        letter-spacing: 5px;
+        transition: all 1s;
+        animation: moveLeft;
+        animation-duration: 2s;
+    }
+    &--sub{
+        display: block;
+        font-size: 3rem;
+        font-weight: 400;
+        animation: moveRight;
+        animation-duration: 2s;
+    }
+    
+
+}
+
+
+
+.heading-secondary{
+    color: $color-primary;
+    font-size: 3rem;
+    font-weight: 400;
+    display: inline-block;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black,.2);
+    }
+
+
+}
+.heading-tertiary{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.paragraph {
+    font-size: 1.6rem;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "paypkos",
+  "version": "1.0.0",
+  "description": "website tempat pencari kos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass" : "node-sass sass/main.scss css/main.css -w "
+  },
+  "repository": {
+    "type": "git"
+  
+  },
+  "keywords": [
+    "kos",
+    "tempat pencarian kos"
+  ],
+  "author": "Muhammad Tegar Akmal",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
