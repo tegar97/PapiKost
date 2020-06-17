@@ -10,6 +10,7 @@ body{
     color: $color-white;
     text-transform: uppercase;
     margin-bottom: .6rem;
+   
 
     &--main {
         display: block;
@@ -19,6 +20,14 @@ body{
         transition: all 1s;
         animation: moveLeft;
         animation-duration: 2s;
+        @include respond(tab-port) {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+        @include respond(tab-land) {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
     }
     &--sub{
         display: block;
@@ -26,6 +35,9 @@ body{
         font-weight: 400;
         animation: moveRight;
         animation-duration: 2s;
+        @include respond(tab-port) {
+            font-size: 1.8rem;
+        }
     }
     
 

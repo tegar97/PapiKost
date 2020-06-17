@@ -6,6 +6,10 @@
     border: none;
     border-bottom: 3px solid transparent;
     width: 70%;
+    @include respond(tab-port) {
+        font-size: 1rem;
+        text-align: left !important;
+    }
 
     &:focus{
         outline: none;
