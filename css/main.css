@@ -505,7 +505,6 @@ body {
 .card {
   position: relative;
   text-decoration: none;
-  transition: transform .25s, visibility .25s ease-in;
   border: none !important; }
   .card__img {
     border-radius: 1rem;
@@ -514,10 +513,12 @@ body {
   .card__img-type-2 {
     border-radius: 1rem;
     width: 29rem;
-    height: 20rem; }
+    height: 20rem;
+    transition: all .6s; }
     .card__img-type-2:hover {
       filter: contrast(2);
-      transform: scale(1.1); }
+      -webkit-transform: scale(1.08);
+      transform: scale(1.08); }
   .card__img-type-3 {
     border-radius: 1rem;
     width: 29rem;
@@ -687,3 +688,6 @@ body {
 
 .city-kost {
   padding: 10rem; }
+
+.section-kostDetail-deskripsi {
+  padding: 15rem; }
