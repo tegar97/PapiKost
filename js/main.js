@@ -1,16 +1,21 @@
 
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 4,
+  slidesPerView: 5,
   direction: getDirection(),
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  on: {
-    resize: function () {
-      swiper.changeDirection(getDirection());
-    }
-  }
+ 
+});
+var swiper = new Swiper('.swiper-container-mobile', {
+  slidesPerView: 2,
+  direction: getDirection(),
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+ 
 });
 
 function getDirection() {

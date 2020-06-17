@@ -1,0 +1,19 @@
+.navbar{
+  
+    font-size: 1.7rem;
+    z-index: 100;
+    position: fixed;
+    
+}
+.background-primary{
+    background-color: $color-primary !important;
+}
+.navbar-modify{
+    height: 7rem;
+
+}
+.nav-item-login{
+    border: 1px solid $color-primary;
+    width: 10rem;
+    overflow: hidden;
+}

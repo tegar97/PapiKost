@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: top;
     position: relative;
+    margin-top: -5rem;
 
     &__text-box{
         position: absolute;
@@ -14,6 +15,7 @@
     }
     &__box{
         margin-top: 2rem;
+        
      
 
         &--search{
