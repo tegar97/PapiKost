@@ -1,0 +1,12 @@
+.reviews__star {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1px;
+    &--active{
+        fill: #55c57a;
+    }
+    &--inactive{
+        fill: #bbb;
+    }
+  }
+ 

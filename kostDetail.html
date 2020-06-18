@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./library//bootstrap-4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/icon/css/all.min.css">
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
 
 
@@ -21,7 +21,7 @@
 <body>
  
     
-    <nav class="nav  another-nav" style="background-color: white;top: 0;" >
+    <nav class="nav-modify  another-nav" style="background-color: white;top: 0;" >
         <div class="container">
             <div class="logo">
                 <a href="index.html">PAPIKOST.COM</a>
@@ -43,10 +43,274 @@
     </nav>
 
       <main>
-        <section class="section-kostDetail-deskripsi">
-            <h1 class="heading-secondary">KOST AGUNG SLAMET</h1>
-            <div class="container">
-                
+        <section class="section-kostDetail-deskripsi" >
+            <div class="img-box">
+                <div class="container">
+                    <div class="row " >
+                        <div class="col-lg-8" data-aos="zoom-in">
+                            <img src="./assets/kost1.jpg" alt="gambar 1" width="752" height="501" class="" >
+                        </div>
+                        <div class="col-lg-4" data-aos="zoom-in">
+                            <div class="row ">
+                                <div class="col-lg-12 pl-5 ">
+                                    <img src="./assets/kost2.jpg" alt="gambar 2" width="372" height="248">
+                                </div>
+                                <div class="col-lg-12 pl-5 pt-3">
+                                    <img src="./assets/kost3.jpg" alt="gambar 3" width="372" height="248">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+            <h1 class="heading-secondary" data-aos="fade-up">KOST AGUNG SLAMET</h1>
+            <div class="row">
+                <div class="col-lg-8" data-aos="zoom-in">
+                    <nav class="">  
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-deskripsi" role="tab" aria-controls="nav-home" aria-selected="true">Deskripsi</a>
+                          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-fasilitas" role="tab" aria-controls="nav-profile" aria-selected="false">Fasilitas kost dan kamar</a>
+                          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-luas" role="tab" aria-controls="nav-contact" aria-selected="false">Luas Kamar</a>
+                          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-lokasi" role="tab" aria-controls="nav-contact" aria-selected="false">Lokasi Kost</a>
+                          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-maps" role="tab" aria-controls="nav-contact" aria-selected="false">Reviews</a>
+                        </div>
+                    </nav>
+                       <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-deskripsi" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <p class=tab-content-paragraph>Kos strategis SANGAT DEKAT dengan kampus ternama Unpad (9,6km) • IPDN (2,0km) • ITB Jatinangor (7,0km) • pusat perbelanjaan Jatinangor Town Square (7,1km) • rumah sakit RS AMC (5,6km) • pusat perbelanjaan jatinangor town square (7,1km). Transportasi publik di sekitar kos taksi dan ojek online. </p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-fasilitas" role="tabpanel" aria-labelledby="nav-profile-tab">
+                           <div class="row ml-3">
+                               <div class="col-lg-3">
+                                   <div class="row ">
+                                    <i class="fas fa-shower huge-font-size primary-text"></i>
+                                    <p class="medium-font-size pl-3">Kamar Mandi</p>
+                                   </div>
+                               </div>
+                               <div class="col-lg-3">
+                                   <div class="row ">
+                                    <i class="fas fa-wifi huge-font-size primary-text"></i>
+                                    <p class="medium-font-size pl-3">Free Wifi </p>
+                                   </div>
+                               </div>
+                         
+                               <div class="col-lg-3">
+                                   <div class="row ">
+                                    <i class="fas fa-wind huge-font-size primary-text"></i>
+                                    <p class="medium-font-size pl-3">Free Wifi</p>
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-luas" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="row ml-3">
+                                <i class="fas fa-home huge-font-size primary-text"></i>
+                                <p class="pl-3 medium-font-size">3x4</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-lokasi" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="row">
+                                <div id='map' style='width: 1000px !important; height: 700px;'></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-maps" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="row p-3">
+                          
+                                  <div class="col-lg-4 pb-5">
+                                      <p class="medium-font-size">Kebersihan</p>
+                                      <div class="row ml-3">
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                      </div>
+                               
+                                  </div>
+                                  <div class="col-lg-4 pb-5">
+                                      <p class="medium-font-size">Keamanan</p>
+                                      <div class="row ml-3">
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                      </div>
+                               
+                                  </div>
+                                  <div class="col-lg-4 pb-5">
+                                      <p class="medium-font-size">Kebersihan</p>
+                                      <div class="row ml-3">
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--inactive">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                      </div>
+                               
+                                  </div>
+                                  <div class="col-lg-4 pb-5">
+                                      <p class="medium-font-size">Kebersihan</p>
+                                      <div class="row ml-3">
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                      </div>
+                               
+                                  </div>
+                                  <div class="col-lg-4 pb-5">
+                                      <p class="medium-font-size">Kebersihan</p>
+                                      <div class="row ml-3">
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                      </div>
+                               
+                                  </div>
+                               
+                                  <div class="col-lg-4 pb-5">
+                                      <p class="medium-font-size">Kebersihan</p>
+                                      <div class="row ml-3">
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="reviews__star reviews__star--active">
+                                            <use xlink:href="./assets/icons.svg#icon-star"></use>
+                                        </svg>
+                                      </div>
+                               
+                                  </div>
+                               
+                            </div>
+                            <div class="row p-5">
+                                <div class="card">
+                                   <H1>REVIEW BY USER...On build</H1>
+                                    
+                               
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+
+                </div>
+                <div class=" col-lg-4 row" data-aos="zoom-in">
+                    <div class="col-lg-12">
+                        <div class="card shadow p-4">
+                            <h3 class="heading-tertiary">
+                                <div class="row">
+                                    <div class="text-center col-lg-12">
+                                        <h4 class="medium-font-size text-dark card__room--lbl-genreRuangan">Tersedia 8 kamar</h4>
+                                    </div>
+                                 
+                                </div>
+                               <div class="row mt-4 border-bottom">
+                                   <div class="col-lg-7">
+                                       <h4 class="medium-font-size text-dark">Per bulan</h4>
+                                   </div>
+                                   <div class="col-lg-5">
+                                       <h4 class="medium-font-size text-dark">Rp 1.350.000</h4>
+                                   </div>
+                               </div>
+                               <div class="row mt-4 border-bottom">
+                                   <div class="col-lg-7">
+                                       <h4 class="medium-font-size text-dark">Per 3 bulan</h4>
+                                   </div>
+                                   <div class="col-lg-5">
+                                       <h4 class="medium-font-size text-dark">Rp 4.350.000</h4>
+                                   </div>
+                               </div>
+                               <div class="row mt-4 border-bottom">
+                                   <div class="col-lg-7">
+                                       <h4 class="medium-font-size text-dark">Per Tahun</h4>
+                                   </div>
+                                   <div class="col-lg-5">
+                                       <h4 class="medium-font-size text-dark">Rp 16.350.000</h4>
+                                   </div>
+                               </div>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mt-3">
+                        <div class="card shadow p-4">
+                            <div class="row">
+
+                                <div class="col-lg-12">
+                                    <button class="w-100 btn primary-btn  ">ORDER NOW</button>
+                                </div>
+
+                              
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
             </div>
         </section>
 
