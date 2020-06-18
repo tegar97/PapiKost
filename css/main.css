@@ -76,11 +76,23 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
 
+.u-margin-bottom-huge {
+  margin-bottom: 12rem !important; }
+
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.u-margin-left-small {
+  margin-left: 1.5rem !important; }
+
+.u-margin-left-medium {
+  margin-left: 4rem !important; }
+
+.u-margin-left-big {
+  margin-left: 8rem !important; }
 
 .primary-text {
   color: #008080; }
@@ -88,6 +100,8 @@ body {
 .primary-btn {
   background-color: #008080 !important;
   color: white !important; }
+  .primary-btn--big {
+    padding: 1rem; }
 
 .logo-font-size {
   font-size: 2rem; }
@@ -774,7 +788,6 @@ body {
   height: 3rem;
   width: 3rem;
   border: 5px solid #008080;
-  border-radius: 50%;
   display: inline-block;
   position: absolute;
   top: 0;

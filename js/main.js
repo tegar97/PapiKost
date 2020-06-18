@@ -32,3 +32,14 @@ $('.navTrigger').click(function () {
 
 });
 
+
+
+
+function showPassword(idName) {
+  var x = document.querySelector(`#${idName}`);
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}

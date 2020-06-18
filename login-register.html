@@ -46,21 +46,78 @@
        <section class="section-all-kost">
            <div class="container">
                <div class="login-form mt-5">
-                   <h1 class="heading-secondary">Sudah Punya Akun ? </h1>
-                   <h2 class="heading-tertiary mt-2 ">Login dengan Email dan Password Kamu</h2>
+                
+                    
+                       
+
+           
                    <div class="row mt-5">
                        <div class="col-lg-5">
                         
                           <form action="" class="form">
+                            <h1 class="heading-secondary">Sudah Punya Akun ? </h1>
+                            <h2 class="heading-tertiary mt-2 ">Login dengan Email dan Password Kamu</h2>
+     
                               <div class="form__group">
                                   <input  id="name"  type="email" class="form__input" placeholder="Email">
+                                  <label for="email" class="form__label">Pastikan Email Asli yah</label>
+                              </div>
+                              <div class="form__group">
+                                  <input id="password"  type="password" class=" password form__input" placeholder="Password ">
+                                  <label for="email" class="form__label">Password</label>
+                              
+                              </div>
+                              <div class="form__radio-group">
+                                <input type="checkbox" class="form__radio-input" id="large" name="size" onclick="showPassword('password')" >
+                                <label for="large" class="form__radio-label">
+                                    <span class="form__radio-button"></span>
+                                    SHOW PASSWORD</label>
+                             </div>
+                             <div class="form__group u-marginm mt-5">
+                                 <button type="submit" class="btn primary-btn medium-font-size pb-3 w-100 ">LOGIN </button>
+                             </div>
+                           
+
+                          </form>
+                       </div>
+                       
+                       <div class="u-margin-left-big col-lg-5  border-left ">
+                        
+                          <form action="" class="form ">
+                            <h1 class="heading-secondary">Atau belum punya akun  ? </h1>
+                            <h2 class="heading-tertiary mt-2 ">Buruan Daftar</h2>
+                              <div class="form__group">
+                                  <input  id="name"  type="text" class="form__input" placeholder="Nama lengkap Kamu">
                                   <label for="email" class="form__label">Full name</label>
                               </div>
                               <div class="form__group">
-                                  <input  id="name"  type="password" class="form__input" placeholder="Email">
-                                  <label for="email" class="form__label">Password</label>
-                                  <input type="checkbox" class="form__checkbox">
+                                <input  id="nomer"  type="number" class="form__input" placeholder="Number Whatsapp/to telp kamu">
+                                <label for="email" class="form__label"><span class="text-danger">PASTIKAN NOMER KAMU ! BUKAN NOMER MANTAN</span></label>
+                            </div>
+                              <div class="form__group">
+                                  <input  id="name"  type="email" class="form__input" placeholder="Email Kamu">
+                                  <label for="email" class="form__label">pastikan email aktif</label>
                               </div>
+                           
+                              <div class="form__group">
+                                  <input    id="passwordRegister" type="password" class="password form__input" placeholder="Email">
+                                  <label for="email" class="form__label">Password</label>
+                              </div>
+                              <div class="form__group">
+                                  <input     type="password" class="password form__input" placeholder="Password ">
+                                  <label for="email" class="form__label">Password Confirm</label>
+                              
+                              </div>
+                              <div class="form__radio-group">
+                                <input type="checkbox" class="form__radio-input" id="showPasswordRegister" name="size" onclick="showPassword('passwordRegister')" >
+                                <label for="showPasswordRegister" class="form__radio-label">
+                                    <span class="form__radio-button"></span>
+                                    SHOW PASSWORD</label>
+                             </div>
+                             <div class="form__group u-marginm mt-5">
+                                 <button type="submit" class="btn primary-btn medium-font-size pb-3 w-100 ">REGISTER </button>
+                             </div>
+                           
 
                           </form>
                        </div>
